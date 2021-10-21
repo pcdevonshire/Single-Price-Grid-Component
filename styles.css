@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightCyan: #2BB3B1;
+    --cyan: #40A8A9;
+    --yellow: hsl(71, 73%, 54%);
+    --gray: hsl(204, 43%, 93%);
+    --blue: hsl(218, 22%, 67%);
+    --white: #fff;
+    --Karla: 'Karla', sans-serif;
+}
+
+::selection {
+    color: var(--cyan);
+    background-color: var(--white);
+}
+
+body {
+    background-color: var(--gray);
+    height: 100%;
+    min-width: 375px;
+    max-width: 1980px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    font-family: var(--Karla);
+    padding: 5em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    border-radius: 10px;
+    overflow-x: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.join, .sub, .why {
+    padding: 1.5em;
+}
+
+.join {
+    background-color: var(--white);
+}
+
+h1 {
+    color: var(--cyan);
+    font-size: 22px;
+    margin-bottom: 1em;
+}
+
+h2 {
+    color: var(--yellow);
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+.join p {
+    color: var(--blue);
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.sub {
+    background-color: var(--cyan);
+}
+
+h3 {
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    color: var(--white);
+    font-size: 30px;
+    margin-right: 0.35em;
+}
+
+.price p {
+    color: var(--gray);
+}
+
+.sub > p {
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 2em;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em 0;
+    background-color: var(--yellow);
+    color: var(--white);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.why {
+    background-color: var(--lightCyan);
+}
+
+li {
+    font-size: 14px;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    .join, .sub, .why {
+        padding: 2.5em 3em;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        margin-bottom: 0.5em;
+    }
+    
+    .join p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    .sub, .why {
+        flex: 1;
+    }
+
+}
